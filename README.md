@@ -54,7 +54,6 @@ For creating new column following DAX expression was written;
        
         A Day of Week = WEEKDAY('Calendar Lookup'[Date],2),
         
-'''dax
 Month Number (SWITCH) = 
 SWITCH(
     'Calendar Lookup'[Month Name],
