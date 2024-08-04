@@ -26,15 +26,15 @@ Total Orders: Total Orders = COUNT(Sales[OrderID])
 Additional measures for metrics like Return Rate, Average Delay, etc.
 - Step 6 : Create the Executive Summary View
 Design the Executive Summary dashboard.
-Details:
-High-Level KPIs: Include visualizations for revenue, orders, and return rate.
+
+High-Level KPIs: Include visualizations for revenue, orders,return and return rate.
 Weekly Revenue Trending Chart: Create a line chart showing weekly revenue trends.
 Interactive Elements: Add a zoom slider to focus on specific time periods and a custom filter pane for detailed filtering.
 - Step 7 :Enable drill-through functionality.
 Details:
 Add a drill-through page focused on product details.
 Include visuals for monthly orders, revenue, and profit targets.
-Set up drill-through options to allow users to navigate from high-level views to detailed product performance.. 
+Set up drill-through options to allow users to navigate from high-level views to detailed product performance. 
 - Step 8 : Implement a "What-If" scenario for price adjustments.
 Create a parameter for price adjustment.
 Use DAX to calculate the impact on total profit based on the price adjustment parameter
@@ -80,7 +80,7 @@ UPPER(
 )
 
        
-- Step 11 : Some important measure was created to find total revenue,total profit etc.
+- Step 11 : Some important measure was created to find total revenue,total profit,total Returns,Total Orders.
 
 Following DAX expression was written for the same,
         
@@ -101,9 +101,7 @@ DISTINCTCOUNT(
     'Sales Data'[OrderNumber]
 )
         
- - Step 12 : New measure was created to find targets,
-
- Following DAX expression was written to find % of customers,
+ - Step 12 : New measure was created to find targets and ALso the previous mon,
  
 Order Target = 
 [Previous Month Orders] * 1.1
